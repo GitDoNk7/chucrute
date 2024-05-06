@@ -25,24 +25,31 @@ export default function App() {
         style={estilo.imgDosD}
       />
       <View style={estilo.nome}>
+        <Text style={estilo.Arroba}>@Albertinho100pressão</Text>
+      </View>
+      <View style={estilo.nome}>
         <Text style={estilo.txttitulo}>Nome</Text>
       </View>
       <View style={estilo.Texto1}>
         <Text style={estilo.Texto2}>Albertinho</Text>
       </View>
       <View style={estilo.nome3}>
-        <Text style={estilo.txttitulo}>Decrição de perfil</Text>
+        <Text style={estilo.txttitulo}>Sobre</Text>
       </View>
       <View style={estilo.Texto1}>
         <Text style={estilo.Texto2}>Cadê as do job, papai? </Text>
       </View>
       <View style={estilo.nome3}>
-        <Text style={estilo.txttitulo}>Email</Text>
+        <Text style={estilo.txttitulo}>Feed</Text>
       </View>
       <View style={estilo.Texto1}>
-        <Text style={estilo.Texto2}>albertinhodosgame@hotmail.com</Text>
+        <Image
+        source={Foto}
+        style={estilo.imgDosD}
+        />
+          
+
       </View>
-      <br></br>
     </View>
     
   );
@@ -51,7 +58,8 @@ export default function App() {
 const estilo = StyleSheet.create({
   container:{
     backgroundColor: 'rgba(255,255,255,255)', 
-    flex:1
+    flex:1,
+    marginTop:45
     
   },
   titulo: {
@@ -81,7 +89,7 @@ const estilo = StyleSheet.create({
   imgDosD: {
     width: 250,
     height: 250,
-    borderRadius: '100%',
+    borderRadius: 125,
     marginTop: 10,
     marginLeft: 90,
     borderColor: 'black',
@@ -124,6 +132,11 @@ const estilo = StyleSheet.create({
     fontFamily: "monospace",
     fontSize: 16,
     marginRight: 20
+  },
+  Arroba:{
+    marginLeft: 63,
+    fontSize: 17,
+    marginTop: -10
   }
 }); 
 
