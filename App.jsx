@@ -4,6 +4,9 @@ import { Image } from 'expo-image';
 // import Avatar from './assets/avatar.jpg';
 import Foto from './assets/albert-einstein.jpg';
 import Linguine from './assets/images.jpg';
+import Feed2 from './assets/avatar.jpg'
+import Feed3 from './assets/albertinhomtamidia.jpg'
+import { inline } from 'react-native-web/dist/cjs/exports/StyleSheet/compiler';
 
 export default function App() {
 
@@ -37,18 +40,36 @@ export default function App() {
         <Text style={estilo.txttitulo}>Sobre</Text>
       </View>
       <View style={estilo.Texto1}>
-        <Text style={estilo.Texto2}>Cadê as do job, papai? </Text>
+        <Text style={estilo.Texto2}>Chama no pv :P </Text>
       </View>
       <View style={estilo.nome3}>
         <Text style={estilo.txttitulo}>Feed</Text>
       </View>
-      <View style={estilo.Texto1}>
+      <View style={estilo.Espacamento}>
+      <View style={estilo.containere}>
         <Image
         source={Foto}
-        style={estilo.imgDosD}
+        style={estilo.photo}
         />
           
 
+      </View>
+      <View style={estilo.containere}>
+        <Image
+        source={Feed2}
+        style={estilo.photo}
+        />
+          
+
+      </View>
+      <View style={estilo.containere}>
+        <Image
+        source={Feed3}
+        style={estilo.photo}
+        />
+          
+
+      </View>
       </View>
     </View>
     
@@ -137,6 +158,33 @@ const estilo = StyleSheet.create({
     marginLeft: 63,
     fontSize: 17,
     marginTop: -10
+  },
+  containere: {
+    backgroundColor: '#fff',
+    marginBottom: 10,
+    borderRadius: 10,
+    shadowColor: '#000',
+    shadowOffset: {
+      width: 0,
+      height: 2,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+    elevation: 5,
+    width: 100,
+    marginRight: 15
+  },
+  photo: {
+    width: 100,
+    aspectRatio: 1, // Proporção quadrada, ajuste conforme necessário
+    borderRadius: 10
+  },
+  Espacamento: {
+    marginTop: 10,
+    marginLeft: 50,
+    marginRight: 5,
+    flexDirection: 'row',
+    
   }
 }); 
 
